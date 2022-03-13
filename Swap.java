@@ -1,26 +1,21 @@
-import java.util.Scanner;
+import java.util.*;
 
-class Swap
-{
-	public static void main(String[] args)
-	{	
-		
-		Scanner ps=new Scanner(System.in);
-		System.out.println("Enter n1= ");
-		double n1= ps.nextDouble();
-		
-		System.out.println("Enter n2= ");
-		double n2= ps.nextDouble();
-		System.out.println("Before  swap : n1="+n1+"  n2="+n2);
-		
-		n1=n1+n2; //12+10=22
-		
-		n2=n1-n2;//22-10=12
-		
-		n1=n1-n2;//22-12=10
-		
-		System.out.println("After  swap : n1="+n1+"   n2="+n2);
-		
-		
-	}
-}
+
+//Swap two numbers without using third variable approach.
+class Swap   
+{  
+    public static void main(String args[])   
+    {   
+        System.out.println("Enter the value of n1 and n2");  
+        Scanner sc = new Scanner(System.in);  
+        
+        int n1 = sc.nextInt();  
+        int n2 = sc.nextInt();  
+        System.out.println("before swapping numbers: "+n1 +" "+ n2);  
+      
+        n1 = n1 + n2;   
+        n2 = n1 - n2;   
+        n1 = n1 - n2;   
+        System.out.println("After swapping: "+n1 +"  " + n2);   
+    }   
+}  
